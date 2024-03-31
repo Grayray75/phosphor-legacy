@@ -123,7 +123,7 @@ public class LightingHooks {
             final int xOffset = dir.getOffsetX();
             final int zOffset = dir.getOffsetZ();
 
-            final Chunk nChunk = world.getChunkProvider().getLoadedChunk(chunk.chunkX + xOffset, chunk.chunkX + zOffset);
+            final Chunk nChunk = world.getChunkProvider().getLoadedChunk(chunk.chunkX + xOffset, chunk.chunkZ + zOffset);
 
             if (nChunk == null) {
                 continue;
